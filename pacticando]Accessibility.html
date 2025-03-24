@@ -275,6 +275,38 @@ Place links in a way that they make sense within the surrounding text. For examp
         Learn more about our accessibility efforts
     </a>
     <hr>
+    <!--VIDEO 22: What Are Good Ways to Make Audio and Video Content Accessible-->
+    <!-- Video -->
+    <video controls src="video.mp4">
+        <track src="captions.vtt" kind="captions" srclang="en" label="English" />
+    </video>
+
+    <!-- Audio -->
+    <audio controls src="audio.mp3">
+        <track src="captions.vtt" kind="captions" srclang="en" label="English" />
+    </audio>
+    <audio controls>
+        <source src="audio.mp3" />
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Transcript -->
+    <h3>Transcript</h3>
+    <p>
+        [Speaker 1]: Welcome to the tutorial on making accessible content
+    </p>
+    <p>
+        [Speaker 2]: Today, we'll cover captions, transcripts, and more.
+    </p>
+
+    <!-- Rest of transcript -->
+    <!--Other ways to make your video and audio content accessible include:
+
+Adding a sign language overlay for videos for deaf people and those hard of hearing.
+Providing volume and speed controls.
+Ensuring good contrast for on-screen text.
+Offering multiple formats.-->
+    <hr>
 </body>
 
 </html>
