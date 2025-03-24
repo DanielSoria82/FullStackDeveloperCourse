@@ -196,6 +196,30 @@ And Abstract roles
     <div role="textbox" contenteditable aria-labelledby="name-label" aria-required="true" id="name"></div>
     <div role="checkbox" aria-checked="true" tabindex="0">Checkbox</div>
     <hr>
+    <!---VIDEO 18: What Is the aria-controls Attribute, and How Does It Work-->
+    <div role="tablist">
+        <button role="tab" id="tab1" aria-controls="section1" aria-selected="true">
+            Tab 1
+        </button>
+        <button role="tab" id="tab2" aria-controls="section2" aria-selected="false">
+            Tab 2
+        </button>
+        <button role="tab" id="tab3" aria-controls="section3" aria-selected="false">
+            Tab 3
+        </button>
+    </div>
+    <div id="section1" role="tabpanel" aria-labelledby="tab1">
+        Section 1 content
+    </div>
+
+    <div id="section2" role="tabpanel" aria-labelledby="tab2" hidden>
+        Section 2 content
+    </div>
+
+    <div id="section3" role="tabpanel" aria-labelledby="tab3" hidden>
+        Section 3 content
+    </div>
+    <hr>
 </body>
 
 </html>
