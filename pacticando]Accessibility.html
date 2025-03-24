@@ -135,6 +135,18 @@ And Abstract roles
         x<sup>2</sup> + y<sup>2</sup> = 3
     </div>
     <hr>
+    <!--VIDEO 13: What Are the Roles of the aria-label and aria-labelledby Attributes-->
+    <button aria-label="Search">
+        <i class="fas fa-search"></i>
+    </button>
+    <input type="text" aria-labelledby="search-btn">
+    <button type="button" id="search-btn">Search</button>
+    <div>
+        <span id="volume-label">Volume</span>
+        <span id="volume-details">Adjust the volume level</span>
+        <input type="range" min="0" max="100" value="30" aria-labelledby="volume-label volume-details">
+    </div>
+    <hr>
 </body>
 
 </html>
