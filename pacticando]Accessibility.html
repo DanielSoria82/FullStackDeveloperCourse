@@ -220,6 +220,16 @@ And Abstract roles
         Section 3 content
     </div>
     <hr>
+    <!--VIDEO 19: What Is the aria-describedby Attribute, and How Does It Work-->
+    <form>
+        <label for="password">Password:</label>
+        <input type="password" id="password" aria-describedby="password-help" />
+        <p id="password-help">Your password must be at least 8 characters long.</p>
+    </form>
+    <button aria-describedby="delete-message">Delete</button>
+
+    <p id="delete-message">Warning! All deletions are permanent.</p>
+    <hr>
 </body>
 
 </html>
