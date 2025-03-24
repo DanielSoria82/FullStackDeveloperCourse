@@ -153,6 +153,23 @@ And Abstract roles
         <span class="label">Settings</span>
     </button>
     <hr>
+    <!--VIDEO 15: What Is the aria-expanded Attribute, and How Does It Work-->
+    <button aria-expanded="true">Menu</button>
+    <button aria-expanded="false">Menu</button>
+    <button aria-expanded="false" aria-controls="menu1">Menu</button>
+    <ul id="menu1">
+        <li>...</li>
+        <li>...</li>
+    </ul>
+    <button aria-owns="menu1" aria-expanded="true">Menu</button>
+    <main>
+        <!-- an entire page worth of content --->
+    </main>
+    <ul id="menu1">
+        <li>...</li>
+        <li>...</li>
+    </ul>
+    <hr>
 </body>
 
 </html>
