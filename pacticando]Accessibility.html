@@ -85,6 +85,42 @@
         <input type="text" id="name" />
     </form>
     <hr>
+    <!--VIDEO 11: What Is the Purpose of WAI-ARIA, and How Does It Work-->
+    <div role="button">Click Me</div>
+    <div role="tablist" aria-label="Football Match Dashboard">
+        <button role="tab" aria-selected="true" aria-controls="match-info-panel" id="match-info-tab">
+            Match Info
+        </button>
+
+        <button role="tab" aria-selected="false" aria-controls="player-stats-panel" id="player-stats-tab">
+            Player Stats
+        </button>
+    </div>
+    <div role="tabpanel" id="match-info-panel" aria-labelledby="match-info-tab">
+        <p>
+            Details about the match, including date,
+            time, venue, and current score.
+        </p>
+    </div>
+
+    <div role="tabpanel" id="player-stats-panel" aria-labelledby="player-stats-tab" hidden>
+        <p>
+            Individual player statistics such as goals,
+            assists, and minutes played.
+        </p>
+    </div>
+    <button aria-expanded="false" aria-controls="more-info">
+        More Info
+    </button>
+
+    <div id="more-info" hidden>
+        <p>This is additional information.</p>
+    </div>
+    <div>
+        <h2 id="header-id">About freeCodeCamp</h2>
+        <button id="button-id" aria-labelledby="header-id button-id">Learn More</button>
+    </div>
+    <hr>
 </body>
 
 </html>
