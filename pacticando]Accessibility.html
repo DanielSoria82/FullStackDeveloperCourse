@@ -178,6 +178,24 @@ And Abstract roles
         <p>File successfully uploaded</p>
     </div>
     <hr>
+    <!--VIDEO 17: What Are Some Common ARIA States Used on Custom Control Elements-->
+    <div role="tablist">
+        <button role="tab" aria-selected="true">Tab 1</button>
+        <button role="tab" aria-selected="false">Tab 2</button>
+        <button role="tab" aria-selected="false">Tab 3</button>
+    </div>
+    <div role="button" tabindex="-1" aria-disabled="true">Edit</div>
+    <button id="menubutton" aria-haspopup="menu" aria-controls="filemenu" aria-expanded="false">File</button>
+    <ul id="filemenu" role="menu" aria-labelledby="menubutton" hidden>
+        <li role="menuitem" tabindex="-1">Open</li>
+        <li role="menuitem" tabindex="-1">New</li>
+        <li role="menuitem" tabindex="-1">Save</li>
+        <li role="menuitem" tabindex="-1">Delete</li>
+    </ul>
+    <div id="name-label">Full Name*</div>
+    <div role="textbox" contenteditable aria-labelledby="name-label" aria-required="true" id="name"></div>
+    <div role="checkbox" aria-checked="true" tabindex="0">Checkbox</div>
+    <hr>
 </body>
 
 </html>
