@@ -15,3 +15,26 @@ aplicará a TODOS LOS ELEMENTOS CON ESE NOMBRE O TAG */{
     color: navy;
 }
 
+/*===What Are Inline, Internal, and External CSS===*/
+
+/* inline css: <p style="color: red;">This is an inline-styled paragraph.</p>*/
+/* internal css:
+<head>
+  <style>
+    p {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <p>This paragraph is styled using internal CSS.</p>
+</body>
+*/
+/* external css:
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <p>This paragraph is styled using external CSS.</p>
+</body>
+*/
