@@ -1,0 +1,17 @@
+/*===segundo video===*/
+
+/*el "selector" selecciona el elemento HTML a estilizar */
+selector {
+/*el BLOQUE DE DELCARACIÓN "{}"contiene
+la "property" y el "value" */
+    property: value;
+}
+p /* si no se coloca ningún simbolo antes del nombre o tag del selector, se
+aplicará a TODOS LOS ELEMENTOS CON ESE NOMBRE O TAG */{
+    color: blue;
+}
+#title,/*EL # selecciona "id tags"*/
+.subheading /*El . selecciona "class tags"*/{
+    color: navy;
+}
+
