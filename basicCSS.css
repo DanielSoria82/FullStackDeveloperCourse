@@ -130,3 +130,24 @@ img + figcaption /*next-sibling combinator (+)*/{
 h2 ~ p /*The subsequent-sibling combinator (~)*/{
   color: green;
 }
+
+/*===What Is the Difference Between Inline and Block-Level Elements in CSS===*/
+
+/*
+<p style="border: 2px solid red;">
+  First paragraph
+</p>
+<p>Second paragraph</p>
+*/
+/*
+<p>This is a
+  <span style="color: red; border: 2px solid green;">red</span>
+  word inside a paragraph.
+</p>
+*/
+/*Block-level elements have the CSS property display: block; applied by default.
+Some common block-level elements are: div elements, paragraphs, headings, ordered lists, unordered lists, and section elements.
+*/
+/*Inline elements have the CSS property display: inline; applied by default.
+Common inline elements are span, anchor, and img elements.
+*/
