@@ -88,7 +88,7 @@ aplicará a TODOS LOS ELEMENTOS CON ESE NOMBRE O TAG */{
 
 /*===What Are the Different Types of CSS Combinators===*/
 
-figure img {
+figure img /*descendant combinator*/{
   border: 4px solid black;
 }
 
@@ -103,7 +103,7 @@ figure img {
     </div>
 </div>
 */
-.container > p {
+.container > p /*child combinator (>)*/{
   color: blue;
 }
 /*
@@ -115,7 +115,7 @@ figure img {
   <figcaption>A cute orange cat lying on its back.</figcaption>
 </figure>
 */
-img + figcaption {
+img + figcaption /*next-sibling combinator (+)*/{
   border: 4px solid black;
 }
 /*
@@ -127,6 +127,6 @@ img + figcaption {
   <p>Another paragraph element</p>
 </div
 */
-h2 ~ p {
+h2 ~ p /*The subsequent-sibling combinator (~)*/{
   color: green;
 }
