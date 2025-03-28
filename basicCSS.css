@@ -38,3 +38,50 @@ aplicará a TODOS LOS ELEMENTOS CON ESE NOMBRE O TAG */{
   <p>This paragraph is styled using external CSS.</p>
 </body>
 */
+
+/*===How Do Width and Height Work===*/
+
+/*
+<head>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: skyblue
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+
+<head>
+  <style>
+    .box {
+      width: 50px;
+      min-width: 100px;
+      height: 50px;
+      min-height: 100px;
+      background-color: lightcoral;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+
+<head>
+  <style>
+    .box {
+      width: 200px;
+      max-width: 150px;
+      height: 200px;
+      max-height: 150px;
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+*/
