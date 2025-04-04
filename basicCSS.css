@@ -151,3 +151,37 @@ Some common block-level elements are: div elements, paragraphs, headings, ordere
 /*Inline elements have the CSS property display: inline; applied by default.
 Common inline elements are span, anchor, and img elements.
 */
+
+/*===How Does Inline-Block Work, and How Does It Differ from Inline and Block Elements===*/
+
+/*
+<div class="container">
+  <span class="inline-block-element element1">Inline-Block Element 1</span>
+  <span class="inline-block-element element2">Inline-Block Element 2</span>
+</div>
+*/
+.inline-block-element {
+  display: inline-block;
+  width: 150px;
+  height: 100px;
+}
+
+.element1 {
+  background-color: lightblue;
+}
+
+.element2 {
+  background-color: lightgreen;
+}
+.inline-block-element {
+  width: 150px;
+  height: 100px;
+}
+
+.element1 {
+  background-color: lightblue;
+}
+
+.element2 {
+  background-color: lightgreen;
+}
