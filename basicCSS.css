@@ -1,0 +1,190 @@
+/*===segundo video===*/
+
+/*el "selector" selecciona el elemento HTML a estilizar */
+selector {
+/*el BLOQUE DE DELCARACIÓN "{}"contiene
+la "property" y el "value" */
+    property: value;
+}
+p /* si no se coloca ningún simbolo antes del nombre o tag del selector, se
+aplicará a TODOS LOS ELEMENTOS CON ESE NOMBRE O TAG */{
+    color: blue;
+}
+#title,/*EL # selecciona "id tags"*/
+.subheading /*El . selecciona "class tags"*/{
+    color: navy;
+}
+
+/*===What Are Inline, Internal, and External CSS===*/
+
+/* inline css: <p style="color: red;">This is an inline-styled paragraph.</p>*/
+/* internal css:
+<head>
+  <style>
+    p {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <p>This paragraph is styled using internal CSS.</p>
+</body>
+*/
+/* external css:
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <p>This paragraph is styled using external CSS.</p>
+</body>
+*/
+
+/*===How Do Width and Height Work===*/
+
+/*
+<head>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: skyblue
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+
+<head>
+  <style>
+    .box {
+      width: 50px;
+      min-width: 100px;
+      height: 50px;
+      min-height: 100px;
+      background-color: lightcoral;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+
+<head>
+  <style>
+    .box {
+      width: 200px;
+      max-width: 150px;
+      height: 200px;
+      max-height: 150px;
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+*/
+
+/*===What Are the Different Types of CSS Combinators===*/
+
+figure img /*descendant combinator*/{
+  border: 4px solid black;
+}
+
+/*
+<div class="container">
+    <p>First</p>
+    <div>
+      <p>Second</p>
+    </div>
+    <div>
+      <p>Third</p>
+    </div>
+</div>
+*/
+.container > p /*child combinator (>)*/{
+  color: blue;
+}
+/*
+<figure>
+  <img
+    src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+    alt="A cute orange cat lying on its back."
+  />
+  <figcaption>A cute orange cat lying on its back.</figcaption>
+</figure>
+*/
+img + figcaption /*next-sibling combinator (+)*/{
+  border: 4px solid black;
+}
+/*
+<div class="container">
+  <h2>Subheading</h2>
+  <p>First paragraph.</p>
+  <p>Second paragraph.</p>
+  <p>Third paragraph.</p>
+  <p>Another paragraph element</p>
+</div
+*/
+h2 ~ p /*The subsequent-sibling combinator (~)*/{
+  color: green;
+}
+
+/*===What Is the Difference Between Inline and Block-Level Elements in CSS===*/
+
+/*
+<p style="border: 2px solid red;">
+  First paragraph
+</p>
+<p>Second paragraph</p>
+*/
+/*
+<p>This is a
+  <span style="color: red; border: 2px solid green;">red</span>
+  word inside a paragraph.
+</p>
+*/
+/*Block-level elements have the CSS property display: block; applied by default.
+Some common block-level elements are: div elements, paragraphs, headings, ordered lists, unordered lists, and section elements.
+*/
+/*Inline elements have the CSS property display: inline; applied by default.
+Common inline elements are span, anchor, and img elements.
+*/
+
+/*===How Does Inline-Block Work, and How Does It Differ from Inline and Block Elements===*/
+
+/*
+<div class="container">
+  <span class="inline-block-element element1">Inline-Block Element 1</span>
+  <span class="inline-block-element element2">Inline-Block Element 2</span>
+</div>
+*/
+.inline-block-element {
+  display: inline-block;
+  width: 150px;
+  height: 100px;
+}
+
+.element1 {
+  background-color: lightblue;
+}
+
+.element2 {
+  background-color: lightgreen;
+}
+.inline-block-element {
+  width: 150px;
+  height: 100px;
+}
+
+.element1 {
+  background-color: lightblue;
+}
+
+.element2 {
+  background-color: lightgreen;
+}
+
+/*===What Are Margins and Padding, and How Do They Work===*/
+
