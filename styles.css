@@ -1,0 +1,42 @@
+/* General page styles */
+body {
+  background-color: rosybrown;
+  font-family: Arial, sans-serif;
+}
+
+/* Paragraph spacing */
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Remove underline from all links */
+a {
+  text-decoration: none;
+}
+
+/* Business card container */
+.business-card {
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  margin: 100px auto 0 auto;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile image */
+.profile-image {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+/* Optional: add some spacing for social links */
+.social-media a {
+  display: block;
+  margin: 5px 0;
+  color: #333;
+}
+
