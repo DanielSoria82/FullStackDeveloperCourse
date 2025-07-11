@@ -29,4 +29,8 @@ The universal selector has the lowest specificity value of any selector. It cont
 
 /*===tercer video===*/
 What Is the Specificity for Type Selectors?
-Type selectors -also known as "element selectors"- are straightforward to use and are written simply as the tag name of the element you want to style. Type selectors have a relatively low specificity compared to other selectors. The specificity value for a type selector is (0, 0, 0, 1). This means that type selectors will be overridden by class selectors, ID selectors, and inline styles, but can still apply styles unless those higher-specificity rules are present. 
+Type selectors -also known as "element selectors"- are straightforward to use and are written simply as the tag name of the element you want to style. Type selectors have a relatively low specificity compared to other selectors. The specificity value for a type selector is (0, 0, 0, 1). This means that type selectors will be overridden by class selectors, ID selectors, and inline styles, but can still apply styles unless those higher-specificity rules are present.
+
+/*===cuarto video===*/
+Class selectors allows developers to target multiple elements with the same class attribute and apply consistent styling. Class selectors are defined by a period (.) followed by the class name. They can be applied to any element in the HTML document. Class selectors have a higher specificity than type selectors but lower than ID selectors and inline styles. The specificity value for a class selector is (0, 0, 1, 0). This means that class selectors can override type selectors, but they can be overridden by ID selectors and inline styles. Class selectors can be combined with other selectors to create more specific rules.
+
