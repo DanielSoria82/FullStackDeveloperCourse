@@ -56,3 +56,20 @@ The Cascade Algorithm is the process the browser uses to decide which CSS rules 
 > specificity. When two rules from the same origin and importance level apply, the rule with the higher specificity will be applied.
 > order of appearance. When two rules have the same specificity, the one that appears last in the CSS will be applied.
 By considering relevance, origin and importance, specificity, scope, and order of appearance, the Cascade Algorithm ensures that your CSS behaves predictably, allowing you to design more complex and nuanced web pages.
+
+/*===octavo video===*/
+How Does Inheritance Work with CSS at a High Level?
+Inheritance determines how styles are passed down from parent elements to their child elements. in CSS, certain properties can be inherited by child elements from their parent elements. In CSS, not all properties are inherited by default. For example, properties like color, font-family, and line-height are inherited. This means that if you set the text color on a parent element, all of its child elements will inherit that color unless you specifically override it.
+<div style="color: blue;">
+  This is the parent element.
+  <p>This is the child element inheriting the color.</p>
+</div>
+In this case, both the parent div and the child p will display their text in blue because the color is inherited.
+On the other hand, properties like margin, padding, border, and background are not inherited by default. If you want a child element to inherit these styles, you need to explicitly set them, either directly on the child element or by using the inherit keyword.
+The inherit keyword can be used to force inheritance of a property from a parent element, even if that property is not normally inherited.
+<div style="padding: 20px;">
+  This is the parent element with padding.
+  <p style="padding: inherit;">This is the child element inheriting the padding.</p>
+</div>
+In this case, the child p element will inherit the 20px of padding from its parent div element.
+It’s important to remember that inheritance only works in one direction – from parent to child. If you override a style on a child element, it won’t affect the parent element.
