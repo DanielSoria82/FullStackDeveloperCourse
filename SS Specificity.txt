@@ -34,3 +34,7 @@ Type selectors -also known as "element selectors"- are straightforward to use an
 /*===cuarto video===*/
 Class selectors allows developers to target multiple elements with the same class attribute and apply consistent styling. Class selectors are defined by a period (.) followed by the class name. They can be applied to any element in the HTML document. Class selectors have a higher specificity than type selectors but lower than ID selectors and inline styles. The specificity value for a class selector is (0, 0, 1, 0). This means that class selectors can override type selectors, but they can be overridden by ID selectors and inline styles. Class selectors can be combined with other selectors to create more specific rules.
 
+/*===quinto video===*/
+What Is the Specificity for ID Selectors?
+ID selectors are allows developers to apply styles to specific elements with unique identifiers. ID selectors are defined by a hash symbol (#) followed by the ID name. They should be unique within an HTML document, meaning no two elements should share the same ID. ID selectors have a very high specificity, higher than type selectors and class selectors, but lower than inline styles. The specificity value for an ID selector is (0, 1, 0, 0). This means that ID selectors can override class selectors and type selectors but can be overridden by inline styles.
+
