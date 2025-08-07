@@ -29,3 +29,15 @@ Unfortunately, this change only brought the contrast ratio to 1.49:1, which mean
 However, you can potentially get even closer by changing the last value, which is lightness. Lightness represents how much white is present in the color.
 Let's decrease the lightness of the red. Now there is a much darker red against the light blue background, which brings the contrast ratio to 10.34:1.
 You could continue to adjust the colors to find the balance between the visual effect you want and an accessible contrast ratio. But it is important to remember that accessibility should always take precedence.
+
+/*===TERCER VIDEO===*/
+What Is the Importance of Good Visual Hierarchy in Design?
+Visual hierarchy refers to the way you layout and display the content of your page to guide the viewer's attention.
+A strong hierarchy can provide a clear path for the eye to follow, ensuring that the information you convey is consumed in the order that you intended.
+Let's consider a basic page layout in which the HTML for the page is semantically correct, but the styling applied does not create a strong visual hierarchy.
+If the font size isn't distinct, there is no visible indication of the document flow, although things are separated by headings.
+To create a visual hierarchy, you should apply different font sizes to the heading tiers. You could also use something like a "callout box" to highlight a specific section.
+Visual hierarchy can also help increase your user conversion. For example, you can take advantage of the callout box to further draw attention to a Call to Action (CTA) button.
+With the CTA button being visually tied to the work history section, it guides the user to the vital information and the action you want them to take based on that information.
+Finally, your visual hierarchy can be important for conveying other components, like a navigation bar or a footer.
+This makes it easier for your users to find the essential information that they may be looking for.
